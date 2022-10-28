@@ -250,3 +250,76 @@ header {
   color: black;
   text-decoration: underline;
 }
+
+/* Notice line */
+.noticeLine {
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noticeLine--left {
+  width: 50%;
+  height: 100%;
+  background-color: #111111;
+  color: #f6f5ef;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noticeLine--right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.noticeLine--left__line,
+.noticeLine--right__line {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  overflow: hidden;
+}
+
+.line__info {
+  width: 330px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-size: 14px;
+  animation: fadeIn 2.5s linear infinite;
+}
+
+.line__info:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  10%,
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.noticeLine--left__line img {
+  width: 36px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.noticeLine--right__line div {
+  font-weight: 700;
+  padding: 0 100px;
+  cursor: pointer;
+}
+
+.noticeLine--right__line img {
+  width: 36px;
+  cursor: pointer;
+}
