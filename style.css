@@ -200,6 +200,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: -1;
 }
 
 .main__title {
@@ -213,7 +214,7 @@ header {
   width: 285px;
   position: absolute;
   bottom: 65px;
-  right: 305px;
+  left: 688px;
 }
 
 .main__drink-2 {
@@ -226,7 +227,7 @@ header {
 .main__drink-3 {
   width: 185px;
   position: absolute;
-  right: 105px;
+  left: 990px;
   bottom: 190px;
 }
 
